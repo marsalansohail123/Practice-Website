@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - Bootstrap</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Image -->
+    <header>
+        <img src="images/header-offer-banner.jpg" class="w-100 d-none d-md-block">
+    </header>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg rounded-0 fixed-top header text-white navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="150" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control rounded-0 w-100" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn bg-white rounded-0" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-user text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1 Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Carousel Images/sample-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block h-50 w-100 flex-column">
+                    <h2 class="text-dark p-2">New Women Clothes Collection</h2>
+                    <h5 class="text-dark p-2">Up To 50% Off Best Selling At $199.99</h5>
+                    <button class="btn btn-dark">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Carousel Images/sample-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block h-50 w-100 flex-column">
+                    <h2 class="text-dark p-2">Interior Berger Paints Livingroom</h2>
+                    <h5 class="text-dark p-2">Up To 40% Off Best Selling At $199.99</h5>
+                    <button class="btn btn-dark">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="container mt-2">
+
+        <!-- Section 2 Shop by Catehory -->
+
+        <section class="border p-2 mb-3 rounded">
+            <h4 class="p-2 m-2 pb-3 border border-top-0 border-start-0 border-end-0">Shop by categories
+            </h4>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/CategoryImages/category1.jpg" alt="">
+                        <h5>Jonor Magic Book</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/CategoryImages/category2.jpg" alt="">
+                        <h5>Wireless EarBud</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/CategoryImages/category3.jpg" alt="">
+                        <h5>Attractive Bags</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/CategoryImages/category4.jpg" alt="">
+                        <h5>Home Sensor</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/CategoryImages/category5.jpg" alt="">
+                        <h5>Whole Sale</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Suggested Products -->
+
+        <section class="row mb-2">
+            <div class="col-md-4">
+                <div class="rounded p-5 card-1">
+                    <h4>Boat Rockerz <br />
+                        450 Pro</h4>
+                    <u><a href="#" class="nav-link">SHOP NOW</a></u>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="rounded p-5 card-2">
+                    <h4>Boat Rockerz <br />
+                        450 Pro</h4>
+                    <u><a href="#" class="nav-link">SHOP NOW</a></u>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="rounded p-5 card-3">
+                    <h4>Boat Rockerz <br />
+                        450 Pro</h4>
+                    <u><a href="#" class="nav-link">SHOP NOW</a></u>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 Trending Products -->
+
+        <section class="border p-2 mb-3 rounded">
+            <h4 class="p-2 m-2 pb-3 border border-top-0 border-end-0 border-start-0">Trending Products</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/119-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/122-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/123-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/124-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/125-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/52-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/72-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="images/trendingProducts/77-home_default.jpg" alt="">
+                        <h5>
+                            Brand: Looney Tunes
+                            <br />
+                            Condition: New
+                            <br />
+                            €82.00
+                        </h5>
+                        <button type="button" class="btn btn header text-white">ADD TO CART <i
+                                class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+
+        <section class="row mb-2">
+            <div class="col-md-6">
+                <div class="rounded p-5 card-img-1">
+                    <h1 class="text-white">Lava z6 Camera <br> Phone</h1>
+                    <u><a href="#" class="text-white">SHOP NOW</a></u>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="rounded p-5 card-img-2">
+                    <h1>Lava z6 Camera <br> Phone</h1>
+                    <u><a href="#" class="text-black">SHOP NOW</a></u>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 Banner -->
+
+        <section style="height: 100px;" class="mb-2">
+            <div class="bannerImg d-flex justify-content-around h-100 align-items-center">
+                <div class="text-white">
+                    <h5>Best Offer Coupen Zone</h5>
+                </div>
+                <div>
+                    <button class="btn bg-white">SHOP NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 Testimonial -->
+
+        <section class="row mb-2 header rouded p-0 m-0">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="pt-2">
+                            <!-- <img src="images/reviewImages/user1.png" class="rounded-pil border border-info" width="100%"
+                                alt=""> -->
+
+                            <img src="images/reviewImages/user1.png" class="rounded-pill border border-info"
+                                width="100%" alt="review1">
+                        </div>
+                    </div>
+                    <div class="col-8 text-white">
+                        <h5 class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptas.</h5>
+                        <h6 class="pt-2">MARK JAFFERSON</h6>
+                        <p> (DESIGNER)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="pt-2">
+                            <img src="images/reviewImages/user2.png" class="rounded-pill border border-info"
+                                width="100%" alt="review1">
+                        </div>
+                    </div>
+                    <div class="col-8 text-white">
+                        <h5 class="pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptas.</h5>
+                        <h6 class="pt-2">MARK JAFFERSON</h6>
+                        <p> (DESIGNER)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8 Latest News -->
+        <section class="border p-2 mb-3 rounded">
+            <h4 class="p-2 m-2 pb-3 border border-top-0 border-end-0 border-start-0">Latest News</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <div>
+                            <img src="images/news/news1.jpg" width="100%" height="350px">
+                        </div>
+                        <div class="p-2">
+                            <h5>29 July 2023</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, eius.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <div>
+                            <img src="images/news/news2.jpg" width="100%" height="350px">
+                        </div>
+                        <div class="p-2">
+                            <h5>29 July 2023</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, eius.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2">
+                        <div>
+                            <img src="images/news/news3.jpg" width="100%" height="350px">
+                        </div>
+                        <div class="p-2">
+                            <h5>29 July 2023</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, eius.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8 Popular Brands -->
+
+        <section class="border p-2 mb-3 rounded">
+            <h4 class="p-2 m-2 pb-3 border border-top-0 border-end-0 border-start-0">Popular Brands</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center p-2">
+                        <img src="images/brands/1.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center p-2">
+                        <img src="images/brands/2.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center p-2">
+                        <img src="images/brands/3.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center p-2">
+                        <img src="images/brands/4.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center p-2">
+                        <img src="images/brands/5.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <br>
+
+    <!-- Footer Start -->
+
+    <footer class="header container-fluid text-white">
+        <main class="container">
+            <section class="row">
+                <div class="col-md-3 mt-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="text-warning p-2">
+                                <i class="fa-solid fa-truck fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="text-center">
+                                <h5>Free Delivery</h5>
+                                <p>Free Shipping on All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="text-warning p-2">
+                                <i class="fa-solid fa-truck fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="text-center">
+                                <h5>Free Delivery</h5>
+                                <p>Free Shipping on All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="text-warning p-2">
+                                <i class="fa-solid fa-truck fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="text-center">
+                                <h5>Free Delivery</h5>
+                                <p>Free Shipping on All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="text-warning p-2">
+                                <i class="fa-solid fa-truck fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="text-center">
+                                <h5>Free Delivery</h5>
+                                <p>Free Shipping on All Order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="row">
+                <div class="col-md-6">
+                    <div class='m-2'>
+                        <h2>
+                            Store Information
+                        </h2>
+                        <p><i class="fa-solid fa-location-dot"></i> Bigstore - Online Mega Store
+                            507-Union Trade Centre
+                            France</p>
+                        <p>
+                            <a href="tel:000000000" class="text-white text-decoration-none">
+
+
+                                <i class="fa-solid fa-phone"></i> 000-000-0000
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="mailto:someone@gmail.com" class="text-white text-decoration-none">
+
+                                <i class="fa-solid fa-envelope"></i> sales@yourcompany.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2>Newsletter</h2>
+                        <p>Subscribe to our latest newsletter to get news about special discounts.</p>
+                        <div class="d-flex p-2">
+                            <input type="text" class="form-control rounded-0" placeholder="Search">
+                            <button class="btn bg-white rounded-0">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <a href="">
+                            <img src="images/icons/app-icon-1.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/icons/app-icon-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="row m-0">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="" class="text-white fs-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="text-white fs-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="text-white fs-3"><i class="fa-solid fa-rss"></i></a>
+                        <a href="" class="text-white fs-3"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="" class="text-white fs-3"> <i class="fa-brands fa-pinterest"></i></a>
+                        <a href="" class="text-white fs-3"> <i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-2 m-0">
+                        <p>© 2023 - Ecommerce software by PrestaShop™</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-around mt-2">
+                        <img src="images/paymentImg/carte_bleue.png" alt="">
+                        <img src="images/paymentImg/visa.png" alt="">
+                        <img src="images/paymentImg/master_card.png" alt="">
+                        <img src="images/paymentImg/american_express.png" alt="">
+                        <img src="images/paymentImg/paypal.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </footer>
+
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
